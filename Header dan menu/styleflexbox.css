@@ -1,0 +1,108 @@
+body{
+  width: 100vw;
+  margin: auto;
+}
+.logo{
+  width: 140px;
+  height: auto;
+}
+.judulweb{
+  font-size: 16px;
+  text-align: center;
+}
+.slogan{
+  font-size: 10px;
+  margin-top: -10px;
+  text-align: center;
+}
+.kepalaweb{
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+.bagianjudul{
+  display: none;
+}
+button{
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
+  
+#tampil{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  left: -500px;
+ /* margin: 0;
+  padding: 0;*/
+  width:100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+  transition-duration: 0.3s;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  height: 100vh;
+  width: 80vw;
+}
+li a{
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  background-color: black;
+  border-bottom: 1px solid #838383;
+  color: white;
+}
+li a:hover{
+  background-color: green;
+}
+
+
+@media only screen and (min-width:768px){
+  .logo{
+    width: 250px;
+    height: auto;
+  }
+  .judulweb{
+    font-size: 24px;
+  }
+  .slogan{
+    font-size: 16px;
+  }
+  button{
+    display: none;
+  }
+  nav{
+    display: flex;
+  }
+  .bagianjudul{
+    display: block;
+    flex-grow: 8;
+  }
+  .judulweb{
+    margin-top: 5px;
+  }
+  #tampil{
+    display: flex;
+    position: static;
+    width: 100%;
+    height: auto;
+    background-color: blue;
+    margin-top: 20px;
+  }
+  ul{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100vw;
+  }
+  li a{
+    border-bottom: 0;
+  }
+}

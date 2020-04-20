@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Website Statis</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+  <header>
+    <div class="bagianlogo col3">
+      <img class="logo" src="gambar/Logo.png" alt="Gambar logo" />
+    </div>
+    <div class="bagianjudul col8">
+      <h1 class="judulweb">Belajar Membuat Web</h1>
+      <p class="slogan"><strong>mari bagikan ilmu</strong></p>
+    </div>
+  </header>
+  <nav>
+    <button id="tombol" onclick="navok()">Menu</button>
+    <ul id="tampil">
+      <li><a href="headernavflexbox.html" onclick="closeok()" target="_blank">Beranda</a></li>
+      <li><a href="#" onclick="closeok()">Html</a></li>
+      <li><a href="#" onclick="close()">CSS</a></li>
+      <li><a href="#" onclick="close()">JavaScript</a></li>
+      <li><a href="#" onclick="close()">Tentang kami</a></li>
+      <li><a href="#" onclick="close()">Kontak</a></li>
+    </ul>
+  </nav>
+  
+  <script>
+  var x = document.getElementById("tombol");
+  var y = document.getElementById("tampil");
+function navok() {
+  
+  if (x.innerHTML === "Menu") {
+    x.innerHTML = "Close";
+    y.style.left = "0";
+    
+    
+  } else {
+    x.innerHTML = "Menu";
+    y.style.left = "-500px";
+  }
+}
+function closeok() {
+  x.innerHTML = "Menu";
+  y.style.left ="-500px";
+}
+</script>
+
+</body>
+</html>

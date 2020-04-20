@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>header dan nav</title>
+  <link rel="stylesheet" href="styleflexbox.css" type="text/css" />
+</head>
+<body>
+  <header class="kepalaweb">
+    <div class="bagianlogo">
+      <img class="logo" src="gambar/Logo.png" alt="Gambar logo" />
+    </div>
+    <div class="bagianjudul">
+      <h1 class="judulweb">Belajar Membuat Web</h1>
+      <p class="slogan">mari bagikan ilmu</p>
+    </div>
+  </header>
+  <nav id="navigasi">
+    <button><img id="tombol" width="28px" src="icon/menu-black-18dp.svg" onclick="navok()"></button>
+    <div id="tampil">
+      <ul id="hori">
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Html</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">Tentang kami</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+
+  <script>
+  var x = document.getElementById("tombol");
+  var y = document.getElementById("tampil");
+  function navok() {
+    if (x.src = "icon/menu-black-18dp.svg") {
+      x.src = "icon/cancel-black-18dp.svg";
+      y.style.left = "0"
+    } else {
+    x.src = "icon/menu-black-18dp.svg";
+    y.style.left = "-500px";
+    }
+  }
+  y.addEventListener("click",function(){
+    x.src = "icon/menu-black-18dp.svg";
+    y.style.left = "-500px";
+  });
+
+</script>
+
+</body>
+</html>
