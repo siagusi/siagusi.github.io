@@ -33,7 +33,8 @@ button{
 #tampil{
   display: flex;
   flex-direction: row;
-  position: absolute;
+  position: fixed;
+  overflow-y: scroll;
   top: 0;
   left: -500px;
  /* margin: 0;
